@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Cargar Archivo</title>
+</head>
+<body>
+    <h2>Cargar Archivo</h2>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Subir</button>
+    </form>
+    <a href="{% url 'listar_archivos' %}">Ver Archivos</a>
+</body>
+</html>

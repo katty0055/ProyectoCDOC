@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista de Archivos</title>
+</head>
+<body>
+    <h1>Lista de Archivos</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre del Archivo C</th>
+                <th>Archivo HTML</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for archivo in archivos %}
+            <tr>
+                <td>{{ archivo }}</td>
+                <td>
+                    <a href="{{ archivo.archivo_html.url }}" target="_blank">Ver HTML</a>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <a href="{% url 'cargar_archivo' %}">Cargar Nuevo Archivo</a>
+</body>
+</html>
