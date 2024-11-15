@@ -1,5 +1,9 @@
 # app/utils.py
+# Integrantes
 
+# Aldo Sebastian Medina Ozorio
+# Ana Paula Gonzalez Alvariza
+# Katteryne Alice Gaona Alcaraz
 import re
 import os
 

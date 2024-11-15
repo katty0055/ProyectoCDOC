@@ -1,5 +1,9 @@
 # app/views.py
+# Integrantes
 
+# Aldo Sebastian Medina Ozorio
+# Ana Paula Gonzalez Alvariza
+# Katteryne Alice Gaona Alcaraz
 import os
 from django.conf import settings
 from django.shortcuts import render, redirect
